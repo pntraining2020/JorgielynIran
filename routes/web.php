@@ -12,5 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('clock');
 });
+
+
+
+Route::post('/clock/store', 'TimeController@store')->name('store');
+
